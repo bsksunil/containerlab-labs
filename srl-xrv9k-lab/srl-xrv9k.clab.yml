@@ -1,0 +1,14 @@
+name: srl-xrv9k
+
+topology:
+  nodes:
+    srl:
+      kind: nokia_srlinux
+      image: ghcr.io/nokia/srlinux
+      
+    xrv9k:
+      kind: cisco_xrv9k
+      image: vrnetlab/cisco_xrv9k:24.2.21
+
+  links:
+    - endpoints: ["srl:e1-1", "xrv9k:Gi0/0/0/0"]

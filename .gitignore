@@ -1,0 +1,47 @@
+# Containerlab generated directories
+clab-*/
+**/clab-*/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# SSH keys
+*.key
+*.pem
+authorized_keys
+
+# Docker/Container logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.bak
+
+# vrnetlab (third-party nested git repo with large build artifacts)
+**/vrnetlab/
+vrnetlab/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Node modules (if any)
+node_modules/
