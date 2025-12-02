@@ -1,0 +1,54 @@
+{
+  "name": "ubuntu-devops",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-ddada10eacc1",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "ubuntu-dev": {
+      "index": "0",
+      "shortname": "ubuntu-dev",
+      "longname": "clab-ubuntu-devops-ubuntu-dev",
+      "fqdn": "ubuntu-dev.ubuntu-devops.io",
+      "group": "",
+      "labdir": "/Users/sashvenk/containerlab-projects/ubuntu-devops-project/clab-ubuntu-devops/ubuntu-dev",
+      "kind": "linux",
+      "image": "ubuntu-devops:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ddada10eacc1",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/Users/sashvenk/containerlab-projects/ubuntu-devops-project/clab-ubuntu-devops/ubuntu-dev",
+        "clab-node-longname": "clab-ubuntu-devops-ubuntu-dev",
+        "clab-node-name": "ubuntu-dev",
+        "clab-node-type": "",
+        "clab-owner": "",
+        "clab-topo-file": "/Users/sashvenk/containerlab-projects/ubuntu-devops-project/ubuntu-devops.clab.yml",
+        "containerlab": "ubuntu-devops"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+  ]
+}

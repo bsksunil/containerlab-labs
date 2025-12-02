@@ -1,0 +1,9 @@
+name: ubuntu-devops
+
+topology:
+  nodes:
+    ubuntu-dev:
+      kind: linux
+      image: ubuntu-devops:latest
+      binds:
+        - ./ubuntu-workspace:/workspace
